@@ -1,0 +1,72 @@
+﻿@model stockmarket.Models.Company
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Company</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.companyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.companyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.companyAbbr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.companyAbbr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.open)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.open)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.high)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.high)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.close)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.close)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.low)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.low)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.adjClose)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.adjClose)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.volume)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.volume)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

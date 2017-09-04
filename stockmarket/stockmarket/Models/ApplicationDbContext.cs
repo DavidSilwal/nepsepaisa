@@ -19,11 +19,14 @@ namespace stockmarket.Models
             modelBuilder.Entity<News>().ToTable("News");
 
             modelBuilder.Entity<Careers>().ToTable("Careers");
+            modelBuilder.Entity<Company>().ToTable("Company");
             base.OnModelCreating(modelBuilder);     
         }
 
         public DbSet<Careers> Careers { get; set; }
         public DbSet<News> News { get; set; }
+        public DbSet<Company> Company { get; set; }
+
 
 
 

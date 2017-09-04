@@ -1,0 +1,83 @@
+﻿@model IEnumerable<stockmarket.Models.Company>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.companyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.companyAbbr)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.open)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.high)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.close)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.low)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.adjClose)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.volume)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.companyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.companyAbbr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.open)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.high)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.close)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.low)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.adjClose)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.volume)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
