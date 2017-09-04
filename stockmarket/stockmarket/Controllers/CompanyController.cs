@@ -21,7 +21,8 @@ namespace stockmarket.Controllers
         // GET: Company
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Company.ToListAsync());
+                      
+            return View(await _context.Company.Take(10).ToListAsync());
         }
 
         // GET: Company/Details/5

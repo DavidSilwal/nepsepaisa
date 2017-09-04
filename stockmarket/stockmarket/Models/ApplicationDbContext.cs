@@ -19,7 +19,8 @@ namespace stockmarket.Models
             modelBuilder.Entity<News>().ToTable("News");
 
             modelBuilder.Entity<Careers>().ToTable("Careers");
-            modelBuilder.Entity<Company>().ToTable("Company");
+            modelBuilder.Entity<Company>().ToTable("stock_api_stockdata");
+
             base.OnModelCreating(modelBuilder);     
         }
 
