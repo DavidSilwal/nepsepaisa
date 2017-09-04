@@ -14,6 +14,10 @@ namespace stockmarket.Models
 
         }
 
+        public ApplicationDbContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<News>().ToTable("News");
