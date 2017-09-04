@@ -13,14 +13,15 @@ namespace stockmarket.Models
         public string Title { get; set; }
         [Required]
         public string Body { get; set; }
-        public DateTime PublishDate { get; set; }
+
+        public DateTime PublishDate { get; set; } = DateTime.Now;
         [Required]
         public DateTime DeadLine { get; set; }
-        public string PublishedBy { get; set; }
+        public string PublishedBy { get; set; } = $"admin";
         //[DataType(DataType.ImageUrl)]
         //public string ImageUrl { get; set; }
 
-        public bool IsExpired { get; set; }
+        public bool IsExpired { get; set; } = false;
     }
     public class News : BaseEntity
     {
@@ -29,12 +30,12 @@ namespace stockmarket.Models
         [Required]
         public string Body { get; set; }
 
-        public DateTime publishedDate { get; set; }
+        public DateTime publishedDate { get; set; } = DateTime.Now;
 
         //[DataType(DataType.ImageUrl)]
         //public string ImageUrl { get; set; }
 
-        public string addedBy { get; set; }
+        public string addedBy { get; set; } = $"admin";
     }
     public class BaseEntity
     {
