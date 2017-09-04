@@ -2,8 +2,13 @@
 
 @foreach (var item in Model)
 {
-    @item.companyName;
-    @item.companyName;
-    @item.high;
+    <tr>
+      <td>  @item.companyName;     </td>
+      <td>  @item.companyAbbr;     </td>
+      <td>  @item.high;            </td>
+        <td><a asp-action="Details" asp-route-id="@item.Id">Details</a></td>
+    </tr>
+
+   
 
 }

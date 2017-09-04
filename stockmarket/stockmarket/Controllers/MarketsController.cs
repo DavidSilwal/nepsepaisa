@@ -24,15 +24,16 @@ namespace stockmarket.Controllers
             var objs = (from c in _context.Company
                         orderby c.companyName
                         select c).GroupBy(g => g.companyName).Select(x => x.FirstOrDefault());
-
-
+            
             return View(objs.ToList());
         }
 
         // GET: Markets/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(string id)
         {
-            return View();
+
+            var objs = _context.Company.Find(id);
+            return View(objs);
         }
 
         // GET: Markets/Create
