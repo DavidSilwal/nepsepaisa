@@ -1,0 +1,13 @@
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\bin\Debug\netcoreapp1.1\WebApplication.Infrastructure.deps.json
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\bin\Debug\netcoreapp1.1\WebApplication.Infrastructure.dll
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\bin\Debug\netcoreapp1.1\WebApplication.Infrastructure.pdb
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\bin\Debug\netcoreapp1.1\WebApplication.Core.dll
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\bin\Debug\netcoreapp1.1\WebApplication.Identity.dll
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\bin\Debug\netcoreapp1.1\WebApplication.Core.pdb
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\bin\Debug\netcoreapp1.1\WebApplication.Identity.pdb
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\obj\Debug\netcoreapp1.1\WebApplication.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\obj\Debug\netcoreapp1.1\WebApplication.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\obj\Debug\netcoreapp1.1\WebApplication.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\obj\Debug\netcoreapp1.1\WebApplication.Infrastructure.AssemblyInfo.cs
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\obj\Debug\netcoreapp1.1\WebApplication.Infrastructure.dll
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Infrastructure\obj\Debug\netcoreapp1.1\WebApplication.Infrastructure.pdb

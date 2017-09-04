@@ -1,0 +1,11 @@
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\bin\Debug\netcoreapp2.0\stockmarket.deps.json
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\bin\Debug\netcoreapp2.0\stockmarket.runtimeconfig.json
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\bin\Debug\netcoreapp2.0\stockmarket.runtimeconfig.dev.json
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\bin\Debug\netcoreapp2.0\stockmarket.dll
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\obj\Debug\netcoreapp2.0\stockmarket.csprojResolveAssemblyReference.cache
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\obj\Debug\netcoreapp2.0\stockmarket.csproj.CoreCompileInputs.cache
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\obj\Debug\netcoreapp2.0\stockmarket.AssemblyInfoInputs.cache
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\obj\Debug\netcoreapp2.0\stockmarket.AssemblyInfo.cs
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\bin\Debug\netcoreapp2.0\stockmarket.pdb
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\obj\Debug\netcoreapp2.0\stockmarket.dll
+C:\Users\dedav\Desktop\Draft\nepsepaisa-master\stockmarket\stockmarket\obj\Debug\netcoreapp2.0\stockmarket.pdb

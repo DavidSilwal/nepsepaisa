@@ -1,0 +1,9 @@
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\bin\Debug\netstandard1.6\WebApplication.Identity.deps.json
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\bin\Debug\netstandard1.6\WebApplication.Identity.dll
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\bin\Debug\netstandard1.6\WebApplication.Identity.pdb
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\obj\Debug\netstandard1.6\WebApplication.Identity.csprojResolveAssemblyReference.cache
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\obj\Debug\netstandard1.6\WebApplication.Identity.csproj.CoreCompileInputs.cache
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\obj\Debug\netstandard1.6\WebApplication.Identity.AssemblyInfoInputs.cache
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\obj\Debug\netstandard1.6\WebApplication.Identity.AssemblyInfo.cs
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\obj\Debug\netstandard1.6\WebApplication.Identity.dll
+C:\Users\dedav\Desktop\nepsepaisa-master\WebApplication.Identity\obj\Debug\netstandard1.6\WebApplication.Identity.pdb

@@ -1,0 +1,54 @@
+﻿@model stockmarket.Models.Careers
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Careers</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Body)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PublishDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeadLine)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DeadLine)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishedBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PublishedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsExpired)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsExpired)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
