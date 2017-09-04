@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using stockmarket.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace stockmarket.Controllers
 {
@@ -19,13 +20,18 @@ namespace stockmarket.Controllers
 
 
         // GET: Markets
-        public ActionResult Index()
+        public async Task<ActionResult> IndexAsync(int? page)
         {
             var objs = (from c in _context.Company
                         orderby c.companyName
                         select c).GroupBy(g => g.companyName).Select(x => x.FirstOrDefault());
-            
-            return View(objs.ToList());
+
+
+            int pageSize = 10;
+            return View(await PaginatedList<Company>.CreateAsync(objs, page ?? 1, pageSize));
+
+
+           // return View(objs.ToList());
         }
 
         // GET: Markets/Details/5
@@ -51,7 +57,7 @@ namespace stockmarket.Controllers
             {
                 // TODO: Add insert logic here
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(IndexAsync));
             }
             catch
             {
@@ -74,7 +80,7 @@ namespace stockmarket.Controllers
             {
                 // TODO: Add update logic here
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(IndexAsync));
             }
             catch
             {
@@ -97,7 +103,7 @@ namespace stockmarket.Controllers
             {
                 // TODO: Add delete logic here
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(IndexAsync));
             }
             catch
             {

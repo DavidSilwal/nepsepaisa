@@ -19,10 +19,14 @@ namespace stockmarket.Controllers
         }
 
         // GET: Company
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
                       
-            return View(await _context.Company.Take(10).ToListAsync());
+            var objs = _context.Company;
+
+            int pageSize = 10;
+            return View(await PaginatedList<Company>.CreateAsync(objs, page ?? 1, pageSize));
+
         }
 
         // GET: Company/Details/5

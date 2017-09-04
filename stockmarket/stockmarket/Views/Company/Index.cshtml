@@ -1,4 +1,4 @@
-﻿@model IEnumerable<stockmarket.Models.Company>
+﻿@model PaginatedList<stockmarket.Models.Company>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,31 +13,26 @@
     <thead>
         <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.companyName)
+                    @Html.DisplayNameFor(model => model[0].companyName)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.companyAbbr)
+                    companyAbbr
+                                    
+                </th>
+                <th>date
+                </th>
+                <th>open
+                </th>
+                <th>high
+                </th>
+                <th>close
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.date)
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.open)
+                <th>adjClose
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.high)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.close)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.low)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.adjClose)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.volume)
+                <th>volume
+              
                 </th>
             <th></th>
         </tr>
@@ -81,3 +76,23 @@
 }
     </tbody>
 </table>
+
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+<a asp-action="Index"
+  
+   asp-route-page="@(Model.PageIndex - 1)"
+ 
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index"
+ 
+   asp-route-page="@(Model.PageIndex + 1)"
+
+   class="btn btn-default @nextDisabled">
+    Next
+</a>
