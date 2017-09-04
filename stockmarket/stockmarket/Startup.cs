@@ -13,23 +13,28 @@ namespace stockmarket
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
         {
             Configuration = configuration;
+
         }
+         
 
         public IConfiguration Configuration { get; }
+        public IHostingEnvironment environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextPool<ApplicationDbContext>(options =>
+            services.AddScoped<SeedDataHelper>();
+
+            services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlite("Data Source=blogging.db");
+                options.UseSqlite("Data Source=stockmarket.db");
             });
+
             services.AddMvc();
-            services.AddSingleton<SeedDataHelper>();
-        }
+             }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedDataHelper seed)
@@ -45,7 +50,8 @@ namespace stockmarket
             }
 
             app.UseStaticFiles();
-            seed.Initialize();
+            
+            //seed.Initialize();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

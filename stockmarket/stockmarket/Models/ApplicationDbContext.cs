@@ -16,6 +16,9 @@ namespace stockmarket.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<News>().ToTable("News");
+
+            modelBuilder.Entity<Careers>().ToTable("Careers");
             base.OnModelCreating(modelBuilder);     
         }
 
